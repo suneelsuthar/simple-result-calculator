@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+#main{
+      border: 2px solid gray;
+      width: 400px;
+      padding: 50px;
+      margin: auto;
+      background-color: gainsboro;
+      margin-top: 20px;
+      height: 650px;
+      
+    }
+   </style>
+<body>
+    <form id="main">
+        <h4 style="text-align:center">Enter Your Data</h4>
+
+    <div class="input-group mb-3">
+        <input type="text" id="one" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1" style="border:1px solid">
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" id="two" class="form-control" placeholder="Last Name" aria-label="Username" aria-describedby="basic-addon1" style="border:1px solid">
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" id="three" class="form-control" placeholder="Roll number" aria-label="class" aria-describedby="basic-addon1" style="border:1px solid">
+    </div>
+    <div class="input-group">
+        <input type="text"  id="four" aria-label="First name" class="form-control" placeholder="English" style="border:1px solid">
+        <input type="text" id="five"  aria-label="Last name" class="form-control" placeholder="Chemistry" style="border:1px solid">
+    </div>
+    <br>
+    <div class="input-group">
+        <input type="text" id="six" aria-label="First name" class="form-control" placeholder="Physics" style="border:1px solid">
+        <input type="text" id="seven" aria-label="Last name" class="form-control" placeholder="Mathematics" style="border:1px solid"><br>
+    </div>
+    <br>
+    <div class="input-group">
+        <input type="text" id="eight" aria-label="First name" class="form-control" placeholder="Biology" style="border:1px solid">
+    </div>
+    <br>
+
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="background:gray" onclick="submitData()">Submit</button>
+    <div class="col">
+        <br>
+        <h4>Search Roll Number</h4>
+        <input type="text" class="form-control" placeholder="Enter your Subject" id="searchbtn"> <br>
+   <a href="#h1"> <input type="button" class="btn btn-info" value="Search" style="width:305px" onclick="searchFun()"></a>
+    </form>
+    </div>
+
+
+
+      <br><br>
+
+<div style="width:410px; background-color: gainsboro; padding: 10px; border: 1px solid;margin: auto;">
+    <td colspan="2"> <h4 id="h1" style="background-color:grey; text-align: center;padding:5px">RESULT</h4></td>
+
+<table style="margin-bottom:15px;">
+
+<tr>
+</tr>
+<tr>
+<td> First Name:</td> <td id="lab1"></td>
+</tr>
+<tr>
+<td> Last Name:</td> <td for="" id="lab2"></td>
+</tr>
+<tr>
+<td> Roll Number:</td> <td for="" id="lab3"></td>
+</tr>
+<tr>
+<td> English:</td> <td for="" id="lab4"></td>
+</tr>
+
+<tr>
+<td> Chemistry:</td> <td for="" id="lab5"></td>
+</tr>
+<tr>
+<td> Physics:</td> <td for="" id="lab6"></td>
+</tr>
+<tr>
+<td> Mathematics:</td> <td for="" id="lab7"></td></tr>
+<tr>
+<td> Biology:</td> <td for="" id="lab8"></td> </tr>
+<tr>
+    <td> Total Marks:</td> <td for="" id="totalMarks"></td></tr>
+    <tr>
+` 
+</table>
+</div>
+
+
+    <script src="new.js"></script>
+</body>
+</html>
